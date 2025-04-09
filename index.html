@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="index.js" defer></script>
-  <title>Tic Tac Toe</title>
-</head>
-<body>
-  <h1>Tic Tac Toe</h1>
-  <div class="board">
-    <div class="tiles" data-target="0"></div>
-    <div class="tiles" data-target="1"></div>
-    <div class="tiles" data-target="2"></div>
-    <div class="tiles" data-target="3"></div>
-    <div class="tiles" data-target="4"></div>
-    <div class="tiles" data-target="5"></div>
-    <div class="tiles" data-target="6"></div>
-    <div class="tiles" data-target="7"></div>
-    <div class="tiles" data-target="8"></div>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <div class="player-names">
+      <label for="player1">
+        Player 1 (X)
+        <input type="text" name="player1" id="player1" autocomplete="off" />
+      </label>
 
-  <div class="results"></div>
-  <button class="reset">Reset</button>
-</body>
+      <label for="player2">
+        Player 2 (O)
+        <input type="text" name="player2" id="player2" autocomplete="off" />
+      </label>
+    </div>
+
+    <div class="game">
+      <div class="start-menu">
+        <button class="start">Start</button>
+      </div>
+      <div class="board">
+        <div class="tiles" data-target="0"></div>
+        <div class="tiles" data-target="1"></div>
+        <div class="tiles" data-target="2"></div>
+        <div class="tiles" data-target="3"></div>
+        <div class="tiles" data-target="4"></div>
+        <div class="tiles" data-target="5"></div>
+        <div class="tiles" data-target="6"></div>
+        <div class="tiles" data-target="7"></div>
+        <div class="tiles" data-target="8"></div>
+      </div>
+    </div>
+
+    <div class="output"></div>
+    <button class="reset">Reset</button>
+  </body>
 </html>
